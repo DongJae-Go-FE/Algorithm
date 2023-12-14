@@ -41,3 +41,15 @@ for (let i = 0; i < 3; i++) {
     모달창들[i].style.display = "block";
   });
 }
+
+function solution([...my_string]) {
+  let reverse = my_string.reverse();
+  let text = "";
+  for (let i = 0; i < reverse.length; i++) {
+    text += reverse[i];
+  }
+  var answer = text;
+  return answer;
+}
+
+solution("bread");
