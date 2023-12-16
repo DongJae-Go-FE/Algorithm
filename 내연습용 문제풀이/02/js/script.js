@@ -37,8 +37,24 @@ function 정렬([...text]) {
 
 정렬("bear");
 
-function 글자세기([...text]) {
-  console.log(text);
+// function 글자세기([...text]) {
+//   console.log(text);
+// }
+
+// 글자세기("aacbbb");
+
+function solution3(array) {
+  var answer = array.sort((a, b) => a - b);
+  return answer[Math.round(array.length / 2) - 1];
 }
 
-글자세기("aacbbb");
+solution3([1, 2, 7, 10, 11]);
+
+function solution4(n) {
+  var answer = [...n.toString()].map((a) => {
+    return Number(a);
+  });
+  return answer.reduce((a, b) => a + b);
+}
+
+solution4(1000);
