@@ -58,3 +58,32 @@ function solution4(n) {
 }
 
 solution4(1000);
+
+// 문자열 str1, str2가 매개변수로 주어집니다. str1 안에 str2가 있다면 1을 없다면 2를 return하도록 solution 함수를 완성해주세요.
+function solution5(str1, str2) {
+  var answer = 0;
+
+  if (str1.includes(str2)) {
+    return (answer = 1);
+  } else {
+    return (answer = 2);
+  }
+}
+
+solution5("ab6CDE443fgh22iJKlmn1o", "6CD");
+
+function solution6(s1, s2) {
+  var answer = 0;
+  for (let i = 0; i < s1.length; i++) {
+    for (let j = 0; j < s2.length; j++) {
+      if (s1[i] === s2[j]) {
+        {
+          answer++;
+        }
+      }
+    }
+  }
+  return answer;
+}
+
+solution6(["a", "b", "c"], ["com", "b", "d", "p", "c"]);
