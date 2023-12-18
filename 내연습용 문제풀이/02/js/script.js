@@ -71,3 +71,19 @@ function solution5(str1, str2) {
 }
 
 solution5("ab6CDE443fgh22iJKlmn1o", "6CD");
+
+function solution6(s1, s2) {
+  var answer = 0;
+  for (let i = 0; i < s1.length; i++) {
+    for (let j = 0; j < s2.length; j++) {
+      if (s1[i] === s2[j]) {
+        {
+          answer++;
+        }
+      }
+    }
+  }
+  return answer;
+}
+
+solution6(["a", "b", "c"], ["com", "b", "d", "p", "c"]);
