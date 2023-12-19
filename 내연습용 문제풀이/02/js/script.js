@@ -87,3 +87,31 @@ function solution6(s1, s2) {
 }
 
 solution6(["a", "b", "c"], ["com", "b", "d", "p", "c"]);
+
+function solution7(n) {
+  var answer = [];
+
+  for (let i = 1; i < n; i++) {
+    if (i % 2 != 0) {
+      answer.push(i);
+    }
+  }
+  console.log(answer);
+  return answer;
+}
+
+solution7(10);
+
+function solution8(n) {
+  var answer = [];
+  for (let i = 1; i <= n; i++) {
+    if (n % i === 0) {
+      answer.push(n / i);
+    }
+  }
+
+  console.log(answer.length % 2 ? 1 : 2);
+  return answer;
+}
+
+solution8(144);
