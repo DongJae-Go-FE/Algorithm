@@ -141,3 +141,26 @@ function solution10(price) {
 
   return parseInt(answer);
 }
+
+function solution11(n, t) {
+  var answer = n;
+
+  for (let i = 1; i <= t; i++) {
+    answer += answer;
+  }
+  console.log("11번 문제::", answer);
+  return answer;
+}
+solution11(7, 15);
+
+function solution12(n, numlist) {
+  var answer = [];
+  for (let i = 0; i < numlist.length; i++) {
+    if (numlist[i] % n === 0) {
+      answer.push(numlist[i]);
+    }
+  }
+  return answer;
+}
+
+solution12(3, [4, 5, 6, 7, 8, 9, 10, 11, 12]);
