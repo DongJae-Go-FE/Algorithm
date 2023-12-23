@@ -127,3 +127,17 @@ function solution9(slice, n) {
 }
 
 solution9(7, 10);
+
+function solution10(price) {
+  if (10 <= price && price < 100000) {
+    answer = price;
+  } else if (100000 <= price && price < 300000) {
+    answer = price - price * 0.05;
+  } else if (300000 <= price && price < 500000) {
+    answer = price - price * 0.1;
+  } else if (500000 <= price && price <= 1000000) {
+    answer = price - price * 0.2;
+  }
+
+  return parseInt(answer);
+}
