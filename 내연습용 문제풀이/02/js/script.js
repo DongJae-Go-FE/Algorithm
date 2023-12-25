@@ -165,3 +165,19 @@ function solution12(n, numlist) {
 
 solution12(3, [4, 5, 6, 7, 8, 9, 10, 11, 12]);
 //.
+
+function solution13([...my_string]) {
+  var answer = "";
+
+  for (i = 0; i < my_string.length; i++) {
+    if (my_string[i] === my_string[i].toUpperCase()) {
+      answer += my_string[i].toLowerCase();
+    }else{
+      answer += my_string[i].toUpperCase();
+    }
+  }
+
+  console.log("13:::",answer);
+  return answer;
+}
+solution13("cccCCC");
