@@ -172,12 +172,29 @@ function solution13([...my_string]) {
   for (i = 0; i < my_string.length; i++) {
     if (my_string[i] === my_string[i].toUpperCase()) {
       answer += my_string[i].toLowerCase();
-    }else{
+    } else {
       answer += my_string[i].toUpperCase();
     }
   }
 
-  console.log("13:::",answer);
+  console.log("13:::", answer);
   return answer;
 }
 solution13("cccCCC");
+
+function solution14([...rsp]) {
+  var answer = "";
+  for (let i = 0; i < rsp.length; i++) {
+    if (rsp[i] === "2") {
+      answer += "0";
+    } else if (rsp[i] === "0") {
+      answer += "5";
+    } else if (rsp[i] === "5") {
+      answer += "2";
+    }
+  }
+  console.log("14:::", answer);
+  return answer;
+}
+
+solution14("205");
