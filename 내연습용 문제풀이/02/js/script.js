@@ -198,3 +198,39 @@ function solution14([...rsp]) {
 }
 
 solution14("205");
+
+function solution15(hp) {
+  var answer = 0;
+  answer = parseInt(hp / 5);
+  answer += (hp % 5) / 3;
+  answer += ((hp % 5) % 3) / 1;
+  console.log(parseInt(answer));
+  return parseInt(answer);
+}
+
+solution15(999);
+
+function solution16([...cipher], code) {
+  var answer = "";
+
+  for (let i = code - 1; i < cipher.length; i += code) {
+    answer += cipher[i];
+  }
+  console.log(answer);
+  return answer;
+}
+
+solution16("pfqallllabwaoclk", 2);
+
+function solution17([...my_string]) {
+  var answer = [];
+
+  for (let i = 0; i < my_string.length; i++) {
+    if(!isNaN(my_string[i])){
+      answer.push(my_string[i])
+    }
+  }
+  return answer.sort();
+}
+
+solution17("hi12392");
