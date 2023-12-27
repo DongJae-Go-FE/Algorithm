@@ -226,11 +226,28 @@ function solution17([...my_string]) {
   var answer = [];
 
   for (let i = 0; i < my_string.length; i++) {
-    if(!isNaN(my_string[i])){
-      answer.push(my_string[i])
+    if (!isNaN(my_string[i])) {
+      answer.push(my_string[i]);
     }
   }
   return answer.sort();
 }
 
 solution17("hi12392");
+
+
+function solution19(numbers, direction) {
+  var answer = [];
+  if (direction === "right") {
+    answer.push(numbers[numbers.length - 1]);
+    answer.push(...numbers.slice(0, -1));
+  }
+  if (direction === "left") {
+    answer.push(numbers[0]);
+    answer.push(...numbers.slice(1));
+  }
+  console.log("19", answer);
+  return answer;
+}
+
+solution19([4, 455, 6, 4, -1, 45, 6], "left");
