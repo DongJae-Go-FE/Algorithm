@@ -235,7 +235,6 @@ function solution17([...my_string]) {
 
 solution17("hi12392");
 
-
 function solution19(numbers, direction) {
   var answer = [];
   if (direction === "right") {
@@ -251,3 +250,15 @@ function solution19(numbers, direction) {
 }
 
 solution19([4, 455, 6, 4, -1, 45, 6], "left");
+
+function solution20(num, k) {
+  var answer = 0;
+  let arr = [...num.toString()].map((item) => {
+    return Number(item);
+  });
+
+  answer = arr.indexOf(k);
+  return console.log(answer ? answer : -1)
+  }
+
+solution20(232443, 4);
