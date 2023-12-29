@@ -1,3 +1,5 @@
+//1번
+
 var 사람 = {
   name: "손흥민",
   sayHi() {
@@ -20,6 +22,9 @@ var 자료 = {
 };
 자료.전부더하기();
 
+
+
+//2번
 const button = document.getElementById("button");
 button.addEventListener("click", function () {
   setTimeout(() => {
@@ -33,6 +38,9 @@ for (let i = 0; i < 5; i++) {
   }, i * 1000);
 }
 
+
+
+//3번
 var 버튼들 = document.querySelectorAll(".btn");
 var 모달창들 = document.querySelectorAll("div");
 
