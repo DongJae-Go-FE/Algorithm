@@ -22,8 +22,6 @@ var 자료 = {
 };
 자료.전부더하기();
 
-
-
 //2번
 const button = document.getElementById("button");
 button.addEventListener("click", function () {
@@ -37,8 +35,6 @@ for (let i = 0; i < 5; i++) {
     console.log(i);
   }, i * 1000);
 }
-
-
 
 //3번
 var 버튼들 = document.querySelectorAll(".btn");
@@ -61,3 +57,15 @@ function solution([...my_string]) {
 }
 
 solution("bread");
+
+function solution1(arr) {
+  var answer = 0;
+  for (let i = 0; i < arr.length - 1; i++) {
+    answer += arr[i];
+  }
+  console.log("테스트",answer / arr.length);
+  return answer / arr.length;
+}
+
+solution1([-100, 0, 111]);
+//.
