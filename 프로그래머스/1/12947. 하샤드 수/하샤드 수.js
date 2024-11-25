@@ -1,0 +1,1 @@
+const solution=(x)=>x%([...x.toString()].map((value)=>Number(value)).reduce((arr, cur)=>arr+cur))===0?true:false;
