@@ -1,0 +1,1 @@
+const solution=(arr1,arr2)=>answer = arr1.map((value,index)=>{return value.length===1?[Number(...value)+Number(arr2[index])]:value.map((value2, index2)=>{return value2 + arr2[index][index2]});});
