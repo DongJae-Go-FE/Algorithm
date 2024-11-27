@@ -1,0 +1,1 @@
+const solution=(my_string, k)=>[...new Array(k)].map(v=>my_string).join("");
