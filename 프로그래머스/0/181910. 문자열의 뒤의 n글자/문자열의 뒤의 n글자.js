@@ -1,0 +1,1 @@
+const solution=(str,n)=>[...str].map((val,idx)=>[...str].length-n<idx+1?val:"").filter(val=>val!=="").join("");
